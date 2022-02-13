@@ -66,6 +66,8 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.Controls.Add(this.lblX);
             this.panel1.Location = new System.Drawing.Point(9, 204);
             this.panel1.Name = "panel1";
@@ -76,6 +78,7 @@
             // 
             this.lblX.AutoSize = true;
             this.lblX.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblX.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblX.Location = new System.Drawing.Point(34, 34);
             this.lblX.Name = "lblX";
             this.lblX.Size = new System.Drawing.Size(32, 32);
@@ -84,6 +87,8 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel2.Controls.Add(this.lblY);
             this.panel2.Location = new System.Drawing.Point(245, 204);
             this.panel2.Name = "panel2";
@@ -94,6 +99,7 @@
             // 
             this.lblY.AutoSize = true;
             this.lblY.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblY.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblY.Location = new System.Drawing.Point(34, 34);
             this.lblY.Name = "lblY";
             this.lblY.Size = new System.Drawing.Size(32, 32);
@@ -113,11 +119,13 @@
             // tmrMouse
             // 
             this.tmrMouse.Enabled = true;
-            this.tmrMouse.Interval = 10;
+            this.tmrMouse.Interval = 50;
             this.tmrMouse.Tick += new System.EventHandler(this.tmrMouse_Tick);
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(23)))), ((int)(((byte)(23)))));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel3.Controls.Add(this.lblScreenNum);
             this.panel3.Location = new System.Drawing.Point(127, 204);
             this.panel3.Name = "panel3";
@@ -128,6 +136,7 @@
             // 
             this.lblScreenNum.AutoSize = true;
             this.lblScreenNum.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblScreenNum.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblScreenNum.Location = new System.Drawing.Point(34, 34);
             this.lblScreenNum.Name = "lblScreenNum";
             this.lblScreenNum.Size = new System.Drawing.Size(32, 32);
@@ -153,6 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(354, 315);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label4);
@@ -161,7 +171,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.edtMain);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Get Screen Info";
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel1.ResumeLayout(false);
